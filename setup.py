@@ -38,7 +38,7 @@ try:
 except ImportError:
     def get_version():
         import os
-        
+
         d = {'__name__':name}
 
         # handle single file modules
@@ -46,7 +46,7 @@ except ImportError:
             module_path = os.path.join(path, '__init__.py')
         else:
             module_path = path
-                                                
+
         with open(module_path) as f:
             try:
                 exec(f.read(), None, d)
@@ -111,7 +111,7 @@ setup(
         "Intended Audience :: System Administrators",
         "Intended Audience :: Developers",
         ],
-    platforms=None,
+    platforms=[],
     url = "http://blitz.works/butter/file/tip",
 #    entry_points = {"console_scripts":["hammerhead=hammerhead:main",
 #                                       "hammerhead-enter=hammerhead:setns"],
@@ -125,4 +125,3 @@ setup(
     tests_require = ['tox', 'pytest', 'pytest-cov', 'pytest-mock', 'mock'],
     cmdclass = {'test': PyTest},
 )
-
