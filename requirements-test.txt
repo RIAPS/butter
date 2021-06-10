@@ -1,0 +1,6 @@
+cffi
+tox
+pytest
+pytest-mock
+pytest-cov
+mock

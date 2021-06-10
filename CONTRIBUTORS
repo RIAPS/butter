@@ -1,0 +1,7 @@
+ Andre LeBlanc - compile issues
+ Ben Burke - compile issues, missing symbols (setns on debian)
+ Frank Hoffmann - compile issues
+ Roman Timofeev - vmsplice issues
+ Simon Ruggier - missing file
+ Sean Bolton - Python 3 import issues
+ Avraham Serour - Notifcation about missing c modules
